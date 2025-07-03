@@ -1,6 +1,6 @@
 # ASP HTML Tag Matcher 🚀
 
-[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/hakansglm/asp-html-tag-matcher)
+[![Version](https://img.shields.io/badge/version-1.1.0-blue.svg)](https://github.com/hakansglm/asp-html-tag-matcher)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![VS Code](https://img.shields.io/badge/VS%20Code-1.60.0%2B-blue.svg)](https://code.visualstudio.com/)
 
