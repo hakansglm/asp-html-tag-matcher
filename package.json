@@ -1,0 +1,75 @@
+{
+  "name": "asp-html-tag-matcher",
+  "displayName": "ASP HTML Tag Matcher",
+  "description": "HTML tag matching support for ASP files - Professional ASP development extension by Hakan Murat Sağlam",
+  "version": "1.0.0",
+  "publisher": "hakansglm",
+  "author": {
+    "name": "Hakan Murat Sağlam",
+    "url": "https://github.com/hakansglm"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hakansglm/asp-html-tag-matcher.git"
+  },
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": ["Other"],
+  "keywords": ["asp", "html", "tag", "matching", "classic asp", "visual studio code", "extension", "web development", "syntax highlighting"],
+  "homepage": "https://github.com/hakansglm/asp-html-tag-matcher#readme",
+  "bugs": {
+    "url": "https://github.com/hakansglm/asp-html-tag-matcher/issues"
+  },
+  "license": "MIT",
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "asp",
+        "aliases": ["ASP", "Classic ASP"],
+        "extensions": [".asp", ".aspx", ".ascx"],
+        "mimetypes": ["text/html"]
+      }
+    ],
+    "commands": [
+      {
+        "command": "aspTagMatcher.jumpToMatchingTag",
+        "title": "Jump to Matching Tag",
+        "category": "ASP Tag Matcher"
+      },
+      {
+        "command": "aspTagMatcher.testExtension",
+        "title": "Test ASP Tag Matcher",
+        "category": "ASP Tag Matcher"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "aspTagMatcher.jumpToMatchingTag",
+        "key": "ctrl+shift+]",
+        "when": "editorTextFocus && (resourceExtname == .asp || resourceExtname == .aspx || resourceExtname == .ascx)"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.60.0",
+    "@types/node": "16.x",
+    "typescript": "^4.9.4",
+    "@vscode/vsce": "^2.15.0",
+    "@typescript-eslint/eslint-plugin": "^5.45.0",
+    "@typescript-eslint/parser": "^5.45.0",
+    "eslint": "^8.28.0"
+  }
+}

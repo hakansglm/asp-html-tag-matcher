@@ -1,0 +1,28 @@
+# Source files
+src/**
+tsconfig.json
+
+# Build tools
+.vscode/
+.gitignore
+
+# Development files
+node_modules/**
+.eslintrc.json
+*.vsix
+
+# Test files
+test/**
+coverage/**
+.vscode-test/**
+
+# Documentation development files
+**/*.md.bak
+**/*.orig
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
