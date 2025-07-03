@@ -79,13 +79,6 @@ export function activate(context: vscode.ExtensionContext) {
         }
     });
     
-    // Hover provider - Tag bilgisi gösterme
-    const hoverProvider = new ASPTagHoverProvider();
-    const hoverDisposable = vscode.languages.registerHoverProvider(
-        aspSelector,
-        hoverProvider
-    );
-    
     // Text document listener ekleyelim - dosya açıldığında bilgi verelim
     const documentListener = vscode.workspace.onDidOpenTextDocument((document) => {
         if (document.fileName.endsWith('.asp') || document.fileName.endsWith('.aspx') || document.fileName.endsWith('.ascx')) {
@@ -155,7 +148,6 @@ export function activate(context: vscode.ExtensionContext) {
 
     context.subscriptions.push(
         highlightDisposable, 
-        hoverDisposable, 
         jumpCommand, 
         documentListener, 
         editorListener, 
