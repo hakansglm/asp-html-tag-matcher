@@ -56,6 +56,7 @@ Bu extension'daki tüm önemli değişiklikler bu dosyada belgelenecektir.
 
 ### Planned Features / Planlanan Özellikler
 - **Custom Color Themes**: User-configurable highlight colors
+- **Tag Information Tooltip**: Detailed tag information on hover
 - **Bracket Pair Colorization**: Different colors for nested tag pairs
 - **Auto-Tag Completion**: Automatic closing tag insertion
 - **Tag Validation**: Real-time HTML tag validation
@@ -63,9 +64,11 @@ Bu extension'daki tüm önemli değişiklikler bu dosyada belgelenecektir.
 
 ### Turkish / Türkçe
 - **Özel Renk Temaları**: Kullanıcı tarafından yapılandırılabilir vurgulama renkleri
+- **Tag Bilgi Tooltip'i**: Hover'da detaylı tag bilgisi
 - **Bracket Çifti Renklendirmesi**: İç içe geçmiş tag çiftleri için farklı renkler
 - **Otomatik Tag Tamamlama**: Otomatik kapanış tag'i ekleme
 - **Tag Doğrulama**: Gerçek zamanlı HTML tag doğrulaması
+- **Performans Optimizasyonları**: Büyük dosyalar için gelişmiş performans
 
 ---
 

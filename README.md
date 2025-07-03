@@ -170,6 +170,7 @@ Extension varsayılan ayarlarla hazır çalışır. Gelecek sürümlerde özelle
 
 ### Version 1.1 (Coming Soon / Yakında)
 - **Custom Colors**: User-configurable highlight colors / Kullanıcı tarafından ayarlanabilir renk temaları
+- **Tag Information**: Detailed tooltips on hover / Hover'da detaylı tag bilgileri
 - **Performance**: Optimizations for large files / Büyük dosyalar için optimizasyonlar
 
 ### Version 1.2 (Future / Gelecek)
